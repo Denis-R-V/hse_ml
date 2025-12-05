@@ -134,7 +134,7 @@ def group_feature_names(feature_names):
 
 def aggregate_feature_weights(feature_names, weights):
     """Сумма абсолютных весов по группам + полный список."""
-    df_full = pd.DataFrame({"Feature": feature_names, "Weight": weights})
+    df_full = pd.DataFrame({"feature": feature_names, "weight": weights})
     groups = group_feature_names(feature_names)
 
     aggregated = []
