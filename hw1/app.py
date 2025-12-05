@@ -270,7 +270,8 @@ with tabs[1]:
 
     st.header("Анализ обучающей выборки")
 
-    train = pd.read_csv(os.path.join(DATA_DIR, 'train.csv'))
+    #train = pd.read_csv(os.path.join(DATA_DIR, 'train.csv'))
+    train = pd.read_csv('https://raw.githubusercontent.com/Murcha1990/MLDS_ML_2022/main/Hometasks/HT1/cars_train.csv')
 
     # Минимально предобработаем
     for i in range(0, len(train)):
